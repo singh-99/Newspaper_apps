@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title%}dk{% endblock title %} 
+
+{% block content %}
+<h1>You are signed in your account</h1>
+<p>hi this is your username {{user.username}}</p>
+<p><a href="{% url 'login' %}">Log In</a></p>
+   
+{% endblock content %}
